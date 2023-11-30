@@ -21,6 +21,12 @@ public class APIManager : MonoBehaviour
 
     [SerializeField] TextMeshPro textIndicator;
 
+    UnityEvent forwardTurtlebotMiscEvents;
+    UnityEvent backwardTurtlebotMiscEvents;
+    UnityEvent leftTurtlebotMiscEvents;
+    UnityEvent rightTurtlebotMiscEvents;
+    UnityEvent stopTurtlebotMiscEvents;
+
 
 
     // Start is called before the first frame update
@@ -71,6 +77,7 @@ public class APIManager : MonoBehaviour
     {
         string uri = turtlebotURI + "move_forward";
         PostAsync(uri);
+        forwardTurtlebotMiscEvents.Invoke();
     }
 
     [ContextMenu("Backward Turtlebot")]
@@ -78,6 +85,7 @@ public class APIManager : MonoBehaviour
     {
         string uri = turtlebotURI + "move_backward";
         PostAsync(uri);
+        backwardTurtlebotMiscEvents.Invoke();
     }
 
     [ContextMenu("Left Turtlebot")]
@@ -85,6 +93,7 @@ public class APIManager : MonoBehaviour
     {
         string uri = turtlebotURI + "turn_left";
         PostAsync(uri);
+        leftTurtlebotMiscEvents.Invoke();
     }
 
     [ContextMenu("Right Turtlebot")]
@@ -92,6 +101,7 @@ public class APIManager : MonoBehaviour
     {
         string uri = turtlebotURI + "turn_right";
         PostAsync(uri);
+        rightTurtlebotMiscEvents.Invoke();
     }
 
     [ContextMenu("Stop Turtlebot")]
@@ -99,5 +109,6 @@ public class APIManager : MonoBehaviour
     {
         string uri = turtlebotURI + "stop";
         PostAsync(uri);
+        stopTurtlebotMiscEvents.Invoke();
     }
 }
