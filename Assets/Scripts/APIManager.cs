@@ -14,9 +14,8 @@ public class APIManager : MonoBehaviour
 {
     static readonly HttpClient client = new HttpClient();
 
-    public static string robotArmURI = "";
-    public static string turtlebotURI = "";
-
+    public string robotArmURI = "";
+    public string turtlebotURI = "";
     public string defaultServerURI = "http://192.168.100.3:5000/";
 
     [SerializeField] TextMeshPro textIndicator;
