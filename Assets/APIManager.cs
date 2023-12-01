@@ -21,11 +21,11 @@ public class APIManager : MonoBehaviour
 
     [SerializeField] TextMeshPro textIndicator;
 
-    UnityEvent forwardTurtlebotMiscEvents;
-    UnityEvent backwardTurtlebotMiscEvents;
-    UnityEvent leftTurtlebotMiscEvents;
-    UnityEvent rightTurtlebotMiscEvents;
-    UnityEvent stopTurtlebotMiscEvents;
+    public UnityEvent forwardTurtlebotMiscEvents;
+    public UnityEvent backwardTurtlebotMiscEvents;
+    public UnityEvent leftTurtlebotMiscEvents;
+    public UnityEvent rightTurtlebotMiscEvents;
+    public UnityEvent stopTurtlebotMiscEvents;
 
 
 

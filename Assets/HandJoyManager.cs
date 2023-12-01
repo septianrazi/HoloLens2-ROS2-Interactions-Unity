@@ -49,28 +49,44 @@ public class HandJoyManager : MonoBehaviour
             else if (direction.z > 0 && dominant_axis == Vector3.forward)
             {
                 if (prevDirection != tb4Directions.Forward)
+                {
+                    if (prevDirection != tb4Directions.Stop)
+                        handJoyStop.Invoke();
                     handJoyFront.Invoke();
+                }
                 Debug.Log("Target is in front of the origin");
                 prevDirection = tb4Directions.Forward;
             }
             else if (direction.z < 0 && dominant_axis == Vector3.forward)
             {
                 if (prevDirection != tb4Directions.Backward)
+                {
+                    if (prevDirection != tb4Directions.Stop)
+                        handJoyStop.Invoke();
                     handJoyBack.Invoke();
+                }
                 Debug.Log("Target is behind the origin");
                 prevDirection = tb4Directions.Backward;
             }
             else if (direction.x > 0 && dominant_axis == Vector3.right)
             {
                 if (prevDirection != tb4Directions.Right)
+                {
+                    if (prevDirection != tb4Directions.Stop)
+                        handJoyStop.Invoke();
                     handJoyRight.Invoke();
+                }
                 Debug.Log("Target is to the right of the origin");
                 prevDirection = tb4Directions.Right;
             }
             else if (direction.x < 0 && dominant_axis == Vector3.right)
             {
                 if (prevDirection != tb4Directions.Left)
+                {
+                    if (prevDirection != tb4Directions.Stop)
+                        handJoyStop.Invoke();
                     handJoyLeft.Invoke();
+                }
                 Debug.Log("Target is to the left of the origin");
                 prevDirection = tb4Directions.Left;
             }
