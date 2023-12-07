@@ -21,8 +21,8 @@ public class ConfigFile : MonoBehaviour
         // If config available, read, otherwise use this default config file
         var config = await ReadOrInitConfig(new Config
         {
-             robotArmURI= "",
-             turtlebotURI = "",
+             robotArmURI= "http://192.168.100.3:5000/",
+             turtlebotURI = "http://192.168.100.3:5000/",
              defaultServerURI = "http://192.168.100.3:5000/",
         });
 

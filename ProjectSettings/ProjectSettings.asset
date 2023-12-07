@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: SeptianRazi
   productName: HoloLens2-ROS2-Interactions
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -158,7 +158,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.DefaultCompany.HoloLens2-ROS2-Interactions
+    Standalone: com.SeptianRazi.HoloLens2-ROS2-Interactions
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -396,7 +396,7 @@ PlayerSettings:
   - m_BuildTarget: Switch
     m_GraphicsJobs: 1
   - m_BuildTarget: MetroSupport
-    m_GraphicsJobs: 1
+    m_GraphicsJobs: 0
   - m_BuildTarget: AppleTVSupport
     m_GraphicsJobs: 0
   - m_BuildTarget: BJMSupport
@@ -771,11 +771,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: HoloLens2-ROS2-Interactions
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: SeptianRazi
+  metroCertificateIssuer: SeptianRazi
+  metroCertificateNotAfter: 00fe307b3048db01
   metroApplicationDescription: HoloLens2-ROS2-Interactions
   wsaImages: {}
   metroTileShortName: HoloLens2-ROS2-Interactions
@@ -796,6 +796,7 @@ PlayerSettings:
       HumanInterfaceDevice: True
       PrivateNetworkClientServer: True
       InternetClientServer: True
+      SpatialPerception: True
       InternetClient: True
       Microphone: True
   metroTargetDeviceFamilies: {}
