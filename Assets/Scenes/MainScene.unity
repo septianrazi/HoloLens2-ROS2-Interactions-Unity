@@ -18736,7 +18736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b432e2188c0599240b661dd3dc26dbd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  robotArmURI: http://192.168.100.15:5002/
+  robotArmURI: http://10.138.226.61:5002/
   turtlebotURI: http://192.168.100.3:5000/
   defaultServerURI: http://192.168.100.3:5000/
   textIndicator: {fileID: 0}
@@ -18843,7 +18843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a87f5d4f24cceec4c8b7ddb51388dbd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enable: 1
+  enable: 0
   apiManager: {fileID: 1845657225}
 --- !u!1 &1870086119
 GameObject:
