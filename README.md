@@ -24,7 +24,7 @@
 <!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 # HoloLens2-ROS2 Interactions in Unity
-Control your ROS2 Robot using interaction techniques via the HoloLens. This Unity project for the HoloLens contains different interaction techniques to control a ROS2 robot via APIs to the ROS2 Host Machine. 
+Control your ROS2 Robot using interaction techniques via the HoloLens 2. This Unity project for the HoloLens 2 contains different interaction techniques to control a ROS2 robot via APIs to the ROS2[Host Machine](../README.md).
 
 <!-- PROJECT LOGO -->
 <!-- <br />
@@ -113,6 +113,7 @@ Novel technique using both hands to control robot direction, akin to a large joy
 
 * [Unity 2022.3.14f1](https://unity.com)
 * [Microsoft Mixed Reality Toolkit 2.8.3](https://docs.microsoft.com/en-gb/windows/mixed-reality/mrtk-unity/)
+* [MRTK Custom Hand Gestures in Unity](https://github.com/septianrazi/MRTK-Custom-Gestures-Unity)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -132,9 +133,14 @@ You will need to download and install the following:
 2. Open Project in Unity (2022 above recommended)
 3. Change build target to Universal Windows Platform in Build Settings
 4. Change the IP address in the API Manager object to the IP address of your ROS2 host machine. (We can change this after build via HoloLens 2 Device Manager) ![Alt text](images/image.png)
+4. Ensure the following capabilities are enabled in Project Settings -> Player:
+![Settings](images/playersettings.png)
 3. Build and Run the project to the HoloLens2 by following the [deploying to HoloLens from Unity instructions](https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/build-and-deploy-to-hololens)
 
-<!-- ### Changing the IP address on a HoloLens Build -->
+### Changing the IP address on a HoloLens Build
+In the persistentDataPath of your hardware, there will be a config.json file that contains fields that can be edited. 
+
+For the HoloLens 2, we can access this file and alter it without having to rebuild the Unity Project. We can do this by accessing the [HoloLens on Device Portal](https://learn.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/using-the-windows-device-portal), and navigating to the persistent data path of the application.
 
 
 <!-- USAGE EXAMPLES -->
@@ -155,8 +161,6 @@ Both examples above use three different hand gestures on either the right or lef
 <!-- ## Roadmap
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues). -->
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -192,7 +196,6 @@ Project Link: [https://github.com/septianrazi/HoloLens2-ROS2-Interactions-Unity]
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Valem](https://www.youtube.com/channel/UCPJlesN59MzHPPCp0Lg8sLw)
 * [OthNeilDrew's README Template](https://github.com/othneildrew/Best-README-Template)
 * [University of Eastern Finland Robotics and AI group](https://sites.uef.fi/edtech/research-labs-and-focus-groups/robotics-and-ai/)
 
