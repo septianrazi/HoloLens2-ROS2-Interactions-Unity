@@ -24,7 +24,7 @@
 <!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 # HoloLens2-ROS2 Interactions in Unity
-Control your ROS2 Robot using interaction techniques via the HoloLens 2. This Unity project for the HoloLens 2 contains different interaction techniques to control a ROS2 robot via APIs to the ROS2[Host Machine](../README.md).
+Control your ROS2 Robot using interaction techniques via the HoloLens 2. This Unity project for the HoloLens 2 contains different interaction techniques to control a ROS2 robot via APIs to the ROS2 [Host Machine](https://github.com/septianrazi/HoloLens2-ROS2-Interactions).
 
 <!-- PROJECT LOGO -->
 <!-- <br />
@@ -65,7 +65,7 @@ Control your ROS2 Robot using interaction techniques via the HoloLens 2. This Un
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#use-in-your-own-projects">Use in your own Projects</a></li>
+        <!-- <li><a href="#use-in-your-own-projects">Use in your own Projects</a></li> -->
         <li><a href="#running-the-project">Running this Project</a></li>
       </ul>
     </li>
@@ -142,6 +142,8 @@ In the persistentDataPath of your hardware, there will be a config.json file tha
 
 For the HoloLens 2, we can access this file and alter it without having to rebuild the Unity Project. We can do this by accessing the [HoloLens on Device Portal](https://learn.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/using-the-windows-device-portal), and navigating to the persistent data path of the application.
 
+## Examples
+See the project in action [on YouTube](https://youtu.be/I6QHjA7SUR8?si%253Dj0qudsOrJZQkcJA3)
 
 <!-- USAGE EXAMPLES -->
 <!-- ## Examples -->
